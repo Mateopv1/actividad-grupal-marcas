@@ -9,7 +9,12 @@
   body {
     background-color: #fff;
     color: #fff;
-    background-color: #1A7FA8;}
+    background-color: #1A7FA8;
+  background: url(img/degradado.png);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
   
   header {
     background-color: rgb(255, 255, 255);
@@ -70,11 +75,11 @@
   .banner-content {
     position: relative;
     z-index: 1;
-    max-width: 600px;
+    max-width: 645px;
   }
   
   .banner-content h1 {
-    font-size: 2rem;
+    font-size: 5rem;
     margin-bottom: 1rem;
     font-weight: bold;
   }
@@ -496,7 +501,21 @@ a {
   font-size: 1.2em;
   margin-bottom: 30px;
 }
-
+.bloque-destacados-superheroes-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+ ;
+}
+.bloque-destacados p {
+  /* Aquí van tus estilos para el párrafo */
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: rgba(1, 82, 137, 1); /* Ejemplo de otro estilo */
+}
+.bloque-destacados h3 {
+  /* Aquí van tus estilos para el párrafo */
+  color: rgba(1, 82, 137, 1); /* Ejemplo de otro estilo */
+}
 .icon-container {
   display: flex;
   justify-content: center;
@@ -648,8 +667,49 @@ a {
   font-size: 1em;
   color: #ccc;
   line-height: 1.5;
+
 }
-/**fomrularios*/
+.container-destacados {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bloque-destacados {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+  width: 300px;
+  border-radius: 12px;
+  color: #1d1d1d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque-destacados:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.bloque-destacados ion-icon {
+  font-size: 3em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.bloque-destacadosh3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.bloque-destacadosp {
+  font-size: 1em;
+  color: #ccc;
+  line-height: 1.5;
+}
+/***************fomrularios*****************/
 .contacto-seccion {
   background-color: #00bcd4; /* Un azul brillante similar al fondo */
   color: white;
@@ -724,3 +784,59 @@ a {
 .formulario-contacto input[type="tel"],
 .formulario-contacto textarea {
   width: calc(1)}
+
+  /***NUEVO SOBRE NOSOSTROI*/
+  .personaje {
+  
+    display: flex;
+      
+    align-items: center;
+      
+    justify-content: space-between;
+      
+    padding: 70px;
+      
+    max-width: 1136px;
+      
+    margin-bottom: 40px;
+      
+    border-radius: 15px 300px 300px 15px; /* Arriba-izquierda, Arriba-derecha, Abajo-derecha, Abajo-izquierda */
+      
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      
+    background: linear-gradient(to left, rgba(30, 81, 139, 1) 0%, rgb(30 81 139 / 96%) 60%, rgba(26, 127, 168, 1) 100%);
+    }
+
+.imagen-contenedor {
+  flex: 0 0 25%; /* 25% del ancho solo para imagen */
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-contenedor img {
+  max-width: 100%;
+  
+}
+
+.info {
+  flex: 0 0 60%; /* Ajusta aquí el ancho del texto */
+  padding: 0 20px;
+  color: white;
+  text-align:left;
+}
+
+.ver-mas {
+  flex: 0 0 10%; /* botón más pequeño y separado */
+  background-color: #ffffff;
+  color: #1A7FA8;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+.contacto a:hover  {
+  color: #1A7FA8 !important; /* Color de texto al pasar el cursor */
+  
+}
