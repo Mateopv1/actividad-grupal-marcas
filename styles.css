@@ -3,12 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
+    
   }
   
   body {
     background-color: #fff;
     color: #fff;
-  }
+    background-color: #1A7FA8;}
   
   header {
     background-color: rgb(255, 255, 255);
@@ -404,3 +405,322 @@ a {
   color: white;
   text-decoration: none;
 }
+/******************************NOSOTROS*******************/
+.personaje {
+  background: linear-gradient(to left, rgba(30, 81, 139, 1) 0%, rgba(30, 81, 139, 0.5) 60%, rgba(30, 81, 139, 0) 100%);
+
+
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 700px;
+  margin: 20px auto;
+  /* Aplicando border-radius para la forma */
+  border-radius: 15px 300px 300px 15px; /* Arriba-izquierda, Arriba-derecha, Abajo-derecha, Abajo-izquierda */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+/* ... el resto de tus estilos para .imagen-contenedor, .info, .ver-mas ... */
+.imagen-contenedor {
+  margin-right: 20px;
+ 
+}
+
+.imagen-contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen cubra el círculo sin deformarse */
+}
+
+.imagen-contenedor .numero {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: white;
+  color: #1e518b;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.info {
+  flex-grow: 1; /* Permite que la información ocupe el espacio restante */
+}
+
+.info h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.info p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.info strong {
+  color: #a7d1eb; /* Un azul más claro para resaltar */
+}
+
+.ver-mas {
+  background-color: #ffffff; /* Botón azul claro */
+  color: #1e518b;
+  border: none;
+  border-radius: 20px;
+  padding: 2px 36px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ver-mas:hover {
+  background-color: #c2e7ff; /* Un azul aún más claro al pasar el ratón */
+}
+.superheroes-section {
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.superheroes-section h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.superheroes-section p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los iconos */
+}
+
+.icon {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 15px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon::before {
+  content: '';
+  background-color: #104a70; /* El punto azul interior */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Forma circular del punto */
+}
+/*******************************CONTACTO***/
+.canal-baxter {
+  width: 400px; /* Ancho del contenedor principal (ajusta según necesites) */
+  /* Estilos para centrar el contenedor en la página (opcional) */
+  margin: 20px auto;
+  border-radius: 10px; /* Bordes redondeados del contenedor principal */
+  overflow: hidden; /* Asegura que el contenido interno no se salga del border-radius */
+}
+
+.imagen-principal {
+  position: relative;
+  width: 100%;
+  height: auto; /* La altura se ajustará proporcionalmente */
+}
+
+.imagen-principal img {
+  display: block; /* Evita espacios extra debajo de la imagen */
+  width: 100%;
+  height: auto;
+}
+
+.imagen-principal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para el texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-principal .overlay h2 {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0;
+}
+
+.botones-inferiores {
+  background-color: #2488b8; /* Color de fondo azul similar al ejemplo */
+  padding: 15px;
+  display: flex;
+  justify-content: space-around; /* Distribuye los botones horizontalmente */
+  align-items: center;
+}
+
+.botones-inferiores .boton-inferior {
+  background-color: white;
+  border: none;
+  width: 60px; /* Ancho de los botones */
+  height: 60px; /* Alto de los botones */
+  border-radius: 10px; /* Bordes redondeados de los botones */
+  cursor: pointer; /* Indica que son interactivos */
+  /* Opcional: estilos para el estado hover */
+  transition: background-color 0.3s ease;
+}
+
+.botones-inferiores .boton-inferior:hover {
+  background-color: #f0f0f0;
+}
+#contacto {
+  background-image: linear-gradient(to left, rgba(26, 127, 168, 0.7), rgba(26, 127, 168, 0)), 
+                    url('img/fondo-contacto.png');
+  background-size: cover;
+  background-position: center;
+  height: 878px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+
+.sobre-mi {
+  padding: 60px 20px;
+
+  text-align: center;
+}
+
+.container-servicios {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contenido-sobre-mi {
+  background: #ffffff6b;
+  padding: 90px;
+}
+.contenido-sobre-mi {
+  background: #ffffff6b;
+}
+.bloque-servicio {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 20px;
+  width: 300px;
+  border-radius: 12px;
+  color: #1d1d1d;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque-servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+.bloque-servicio ion-icon {
+  font-size: 3em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.bloque-servicio h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.bloque-servicio p {
+  font-size: 1em;
+  color: #ccc;
+  line-height: 1.5;
+}
+/**fomrularios*/
+.contacto-seccion {
+  background-color: #00bcd4; /* Un azul brillante similar al fondo */
+  color: white;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contacto-info {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contacto-info h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contacto-info p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.detalle-contacto {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.detalle-contacto .icono {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  color: #f50057; /* Un color de acento */
+}
+
+.detalle-contacto svg {
+  width: 100%;
+  height: 100%;
+}
+
+.formulario-contacto {
+  flex: 1;
+  background-color: rgba(1, 82, 137, 1); /* Un azul muy claro para el formulario */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.formulario-contacto h2 {
+  color: #00838f;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formulario-contacto .campo {
+  margin-bottom: 15px;
+}
+
+.formulario-contacto label {
+  display: block;
+  margin-bottom: 5px;
+  color: #006064;
+  font-weight: bold;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto textarea {
+  width: calc(1)}
