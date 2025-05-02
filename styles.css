@@ -710,80 +710,85 @@ a {
   line-height: 1.5;
 }
 /***************fomrularios*****************/
-.contacto-seccion {
-  background-color: #00bcd4; /* Un azul brillante similar al fondo */
-  color: white;
-  padding: 40px;
+.baxter-canal {
+  background: url('fondo-baxter.jpg') no-repeat center;
+  background-size: cover;
+  padding: 50px 20px;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  gap: 40px;
-}
-
-.contacto-info {
-  flex: 1;
-  max-width: 400px;
-}
-
-.contacto-info h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-.contacto-info p {
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.detalle-contacto {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
 }
 
-.detalle-contacto .icono {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
-  color: #f50057; /* Un color de acento */
-}
-
-.detalle-contacto svg {
-  width: 100%;
-  height: 100%;
-}
-
-.formulario-contacto {
-  flex: 1;
-  background-color: rgba(1, 82, 137, 1); /* Un azul muy claro para el formulario */
+.baxter-contacto {
+  background-color: rgba(1, 82, 137, 1); /* azul oscuro estilo Baxter */
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.formulario-contacto h2 {
-  color: #00838f;
+.baxter-titulo {
+  font-size: 1.8em;
+  margin-bottom: 10px;
   text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.baxter-descripcion {
+  font-size: 1em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.formulario-contacto .campo {
-  margin-bottom: 15px;
+.baxter-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.formulario-contacto label {
-  display: block;
+.baxter-campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.baxter-campo label {
   margin-bottom: 5px;
-  color: #006064;
   font-weight: bold;
+  font-size: 0.9em;
 }
 
-.formulario-contacto input[type="text"],
-.formulario-contacto input[type="email"],
-.formulario-contacto input[type="tel"],
-.formulario-contacto textarea {
-  width: calc(1)}
+.baxter-campo input,
+.baxter-campo textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background-color: #eaf2f8;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.baxter-campo input:focus,
+.baxter-campo textarea:focus {
+  outline: 2px solid #005b96;
+}
+
+.baxter-boton {
+  padding: 12px;
+  background-color: #ffffff;
+  color: #004c89;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.baxter-boton:hover {
+  background-color: #cce6ff;
+}
 
   /***NUEVO SOBRE NOSOSTROI*/
   .personaje {
@@ -852,4 +857,109 @@ background-color: #1A7FA8;
 .conba:hover{
   color: #ffffff ;
 
+}
+/********NOTICIAS********/
+.noti-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero */
+.noti-hero {
+  position: relative;
+  margin: 20px 0;
+}
+
+.noti-hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.noti-hero-text {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Grid de tarjetas */
+.noti-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.noti-card {
+  background-color: #fff;
+  border-radius: 6px;
+  width: calc(33.333% - 13.33px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.noti-card-img {
+  background-color: #94c8e0;
+  height: 140px;
+}
+
+.noti-card-body {
+  padding: 15px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.noti-card-body h3 {
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+
+.noti-card-body p {
+  font-size: 0.8em;
+  color: #333;
+  flex-grow: 1;
+}
+
+.noti-card-body button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: #005b96;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.noti-card-body button:hover {
+  background-color: #003f63;
+}
+
+/* Botón Ver más */
+.noti-mas {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.noti-mas button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 2px solid #c4d7e6;
+  background-color: #f3f9fc;
+  color: #005b96;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.noti-mas button:hover {
+  background-color: #dceef9;
 }
