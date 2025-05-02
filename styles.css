@@ -10,10 +10,10 @@
     background-color: #fff;
     color: #fff;
     background-color: #1A7FA8;
-  background: url(img/degradado.png);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+    background: url(img/degradado.png);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
   
   header {
@@ -154,7 +154,7 @@ html, body {
 li{
   color: #1A7FA8;
 }
-/***jn*/
+/************************FOOTER************************/
 footer {
   background-color: rgba(1, 82, 137, 1);
   color: white;
@@ -245,18 +245,18 @@ footer {
   margin: 0 15px;
   text-decoration: none;
   font-size: 28px;
-  color: rgba(26, 127, 168, 1); /* Azul clásico */
+  color: rgba(26, 127, 168, 1); 
   transition: color 0.3s ease;
 }
 
 .redesSociales a:hover {
-  color: #0056b3; /* Azul más oscuro al pasar el ratón */
+  color:#003f58; 
 }
 .footer-logo img{
   width: 8%;
 }
 
-/*****CAMBIOS HEADER**/
+/************************CAMBIOS HEADER************************/
 header {
   background-color: white;
   border-bottom: 2px solid #1A7FA8;
@@ -307,23 +307,23 @@ nav ul li a {
   border: 2px solid #1A7FA8;
 }
 header {
-  text-align: center; /* Centra el contenido en línea */
-  /* ... otros estilos del header ... */
+  text-align: center; 
+  
 }
 
 nav {
-  display: inline-block; /* Permite centrarlo con text-align y establecer ancho/alto */
-  /* ... otros estilos del nav ... */
+  display: inline-block; 
+  
 }
 .conocenos {
-  background-color: white; /* Color de fondo del botón */
-  color: #1A7FA8; /* Color del texto (azul, similar al ejemplo) */
-  border: 2px solid #1A7FA8; /* Borde azul */
-  border-radius: 25px; /* Radio para las esquinas redondeadas (ajusta según necesites) */
-  padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) - ajusta según el tamaño deseado */
-  font-size: 16px; /* Tamaño de la fuente */
-  cursor: pointer; /* Indica que es interactivo */
-  transition: background-color 0.3s ease; /* Transición suave para el hover (opcional) */
+  background-color: white; 
+  color: #1A7FA8; 
+  border: 2px solid #1A7FA8; 
+  border-radius: 25px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
 }
 header {
   display: flex;
@@ -410,23 +410,19 @@ a {
   color: white;
   text-decoration: none;
 }
-/******************************NOSOTROS*******************/
+/************************NOSOSTROS************************/
 .personaje {
   background: linear-gradient(to left, rgba(30, 81, 139, 1) 0%, rgba(30, 81, 139, 0.5) 60%, rgba(30, 81, 139, 0) 100%);
-
-
   color: white;
   display: flex;
   align-items: center;
   padding: 20px;
   max-width: 700px;
   margin: 20px auto;
-  /* Aplicando border-radius para la forma */
-  border-radius: 15px 300px 300px 15px; /* Arriba-izquierda, Arriba-derecha, Abajo-derecha, Abajo-izquierda */
+  border-radius: 15px 300px 300px 15px; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
-/* ... el resto de tus estilos para .imagen-contenedor, .info, .ver-mas ... */
 .imagen-contenedor {
   margin-right: 20px;
  
@@ -435,7 +431,7 @@ a {
 .imagen-contenedor img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que la imagen cubra el círculo sin deformarse */
+  object-fit: cover; 
 }
 
 .imagen-contenedor .numero {
@@ -455,7 +451,7 @@ a {
 }
 
 .info {
-  flex-grow: 1; /* Permite que la información ocupe el espacio restante */
+  flex-grow: 1; 
 }
 
 .info h2 {
@@ -507,14 +503,12 @@ a {
  ;
 }
 .bloque-destacados p {
-  /* Aquí van tus estilos para el párrafo */
   font-size: 1.2em;
   margin-bottom: 30px;
-  color: rgba(1, 82, 137, 1); /* Ejemplo de otro estilo */
+  color: rgba(1, 82, 137, 1); 
 }
 .bloque-destacados h3 {
-  /* Aquí van tus estilos para el párrafo */
-  color: rgba(1, 82, 137, 1); /* Ejemplo de otro estilo */
+  color: rgba(1, 82, 137, 1); 
 }
 .icon-container {
   display: flex;
@@ -526,7 +520,7 @@ a {
   background-color: white;
   width: 80px;
   height: 80px;
-  border-radius: 15px; /* Bordes redondeados */
+  border-radius: 15px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -534,28 +528,27 @@ a {
 
 .icon::before {
   content: '';
-  background-color: #104a70; /* El punto azul interior */
+  background-color: #104a70; 
   width: 40px;
   height: 40px;
-  border-radius: 50%; /* Forma circular del punto */
+  border-radius: 50%; 
 }
-/*******************************CONTACTO***/
+/************************CONTACTO************************/
 .canal-baxter {
-  width: 400px; /* Ancho del contenedor principal (ajusta según necesites) */
-  /* Estilos para centrar el contenedor en la página (opcional) */
+  width: 400px; 
   margin: 20px auto;
-  border-radius: 10px; /* Bordes redondeados del contenedor principal */
-  overflow: hidden; /* Asegura que el contenido interno no se salga del border-radius */
+  border-radius: 10px; 
+  overflow: hidden;
 }
 
 .imagen-principal {
   position: relative;
   width: 100%;
-  height: auto; /* La altura se ajustará proporcionalmente */
+  height: auto;
 }
 
 .imagen-principal img {
-  display: block; /* Evita espacios extra debajo de la imagen */
+  display: block; 
   width: 100%;
   height: auto;
 }
@@ -566,7 +559,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente para el texto */
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -580,21 +573,20 @@ a {
 }
 
 .botones-inferiores {
-  background-color: #2488b8; /* Color de fondo azul similar al ejemplo */
+  background-color: #2488b8; 
   padding: 15px;
   display: flex;
-  justify-content: space-around; /* Distribuye los botones horizontalmente */
+  justify-content: space-around;
   align-items: center;
 }
 
 .botones-inferiores .boton-inferior {
   background-color: white;
   border: none;
-  width: 60px; /* Ancho de los botones */
-  height: 60px; /* Alto de los botones */
-  border-radius: 10px; /* Bordes redondeados de los botones */
-  cursor: pointer; /* Indica que son interactivos */
-  /* Opcional: estilos para el estado hover */
+  width: 60px;
+  height: 60px; 
+  border-radius: 10px; 
+  cursor: pointer; 
   transition: background-color 0.3s ease;
 }
 
@@ -602,8 +594,7 @@ a {
   background-color: #f0f0f0;
 }
 #contacto {
-  background-image: linear-gradient(to left, rgba(26, 127, 168, 0.7), rgba(26, 127, 168, 0)), 
-                    url('img/fondo-contacto.png');
+  background-image: linear-gradient(to left, rgba(26, 127, 168, 0.7), rgba(26, 127, 168, 0)), url('img/fondo-contacto.png');
   background-size: cover;
   background-position: center;
   height: 878px;
@@ -613,7 +604,6 @@ a {
   text-align: center;
   position: relative;
 }
-
 
 .sobre-mi {
   padding: 60px 20px;
@@ -709,7 +699,7 @@ a {
   color: #ccc;
   line-height: 1.5;
 }
-/***************fomrularios*****************/
+/************************FORMULARIO************************/
 .baxter-canal {
   background: url('fondo-baxter.jpg') no-repeat center;
   background-size: cover;
@@ -790,27 +780,18 @@ a {
   background-color: #cce6ff;
 }
 
-  /***NUEVO SOBRE NOSOSTROI*/
-  .personaje {
-  
-    display: flex;
-      
-    align-items: center;
-      
-    justify-content: space-between;
-      
-    padding: 70px;
-      
-    max-width: 1136px;
-      
-    margin-bottom: 40px;
-      
-    border-radius: 15px 300px 300px 15px; /* Arriba-izquierda, Arriba-derecha, Abajo-derecha, Abajo-izquierda */
-      
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      
-    background: linear-gradient(to left, rgba(30, 81, 139, 1) 0%, rgb(30 81 139 / 96%) 60%, rgba(26, 127, 168, 1) 100%);
-    }
+/************************NUEVO NOSOSTROS************************/
+.personaje {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px;
+  max-width: 1136px; 
+  margin-bottom: 40px;
+  border-radius: 15px 300px 300px 15px; /* Arriba-izquierda, Arriba-derecha, Abajo-derecha, Abajo-izquierda */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to left, rgba(30, 81, 139, 1) 0%, rgb(30 81 139 / 96%) 60%, rgba(26, 127, 168, 1) 100%);
+}
 
 .imagen-contenedor {
   flex: 0 0 25%; /* 25% del ancho solo para imagen */
@@ -858,7 +839,7 @@ background-color: #1A7FA8;
   color: #ffffff ;
 
 }
-/********NOTICIAS********/
+/************************NOTICIAS************************/
 .noti-wrapper {
   width: 90%;
   max-width: 1200px;
