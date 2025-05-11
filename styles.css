@@ -889,6 +889,8 @@ background-color: #1A7FA8;
 .noti-card-img {
   background-color: #94c8e0;
   height: 140px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .noti-card-body {
@@ -911,14 +913,17 @@ background-color: #1A7FA8;
 }
 
 .noti-card-body button {
+  align-self: center;
   margin-top: 10px;
-  padding: 8px 20px;
+  padding: 8px 10px;
   background-color: #005b96;
   color: white;
   border: none;
   border-radius: 20px;
   font-size: 0.8em;
   cursor: pointer;
+  width: 25%;
+
 }
 
 .noti-card-body button:hover {
@@ -943,4 +948,8 @@ background-color: #1A7FA8;
 
 .noti-mas button:hover {
   background-color: #dceef9;
+}
+
+.icon-block img {
+  align-items: center; 
 }
